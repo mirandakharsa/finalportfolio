@@ -340,8 +340,9 @@ body, html{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.flip-card:hover .flip-card-inner, .flip-card:focus-within .flip-card-inner, .flip-card:active .flip-card-inner, .flip-card:focus .flip-card-inner{
+.flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner, .flip-card:active .flip-card-inner, .flip-card:focus .flip-card-inner{
   transform: rotateY(180deg);
+  
 }
 
 .flip-card-front, .flip-card-back {
@@ -364,6 +365,7 @@ body, html{
   transform: rotateY(180deg);
   
 }
+
 
 /* animation */
 .arrow{
@@ -425,54 +427,8 @@ p{
     font-size: 20px;
 }
 
-/* .mySlides{
-    display: none;
-} */
-/* .images{
-    display:none;
-} */
-.images-left, .images-right{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    background-color: #2A868A;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-
-  .images-right {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-  .images-left:hover, .images-right:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-/* 
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  } */
-   */
-   
-
-
-  /* @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  } */
-/* } */
+.flip-card{
+    margin-left: 210px;
+    width: 400px;
+    height: 400px;
+}
