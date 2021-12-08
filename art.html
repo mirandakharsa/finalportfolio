@@ -1,0 +1,94 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet"/>
+
+    <title>Featured Work</title>
+</head>
+<body>
+    <a class = "skip" href="#skip">Skip to Main Content</a>
+  
+    <header>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="current" href="art.html">Art</a></li>
+                <li><a href="contact.html">Say Hello</a></li>
+            </ul>
+        </nav>
+
+        <h1>Featured work</h1>
+    </header>
+
+<main id="skip"> 
+    <p>These are my selected pieces of work, highlighting a range of mediums. These pieces showcase both personal and commissioned projects. You'll notice that I typically work with watercolor and charcoal. If there's something you like, <a class = "links" href="contact.html">leave me a note!</a></p>
+   
+    <div class="controls">
+        <button type="button" class="control" data-filter="all">All</button>
+        <button type="button" class="control" data-filter=".figure">Figure Drawing</button>
+        <button type="button" class="control" data-filter=".other">Other Work</button>
+      
+    </div>
+
+    <div class ="images">
+        <img class ="mySlides" id = image_1 src = "images/boycott.jpeg" alt="pillsbury boycott drawing" class="mix other"/>
+        <img class ="mySlides" id = image_3 src = "images/man.JPG" alt="man body, watercolor" class="mix figure"/>
+        <img class ="mySlides" id = image_4 src = "images/woman.jpeg" alt="woman body, charcoal" class="mix figure"/>
+        <img class ="mySlides" id = image_5 src = "images/portrait.jpeg" alt="self portrait" class="mix figure"/>
+        <img class ="mySlides" id = image_6 src = "images/Mnt.jpeg" alt="mountain painting" class="mix other"/>
+        <img class ="mySlides" id = image_7 src = "images/Palestine.jpeg" alt="image of front and back covers of a palestine children's book" class="mix other"/>
+        <img class ="mySlides" id = image_8 src = "images/eye.jpeg" alt="eye painting" class="mix figure"/>
+        <img class ="mySlides" id = image_9 src = "images/face.png" alt="face line drawing" class="mix figure"/>
+        <img class ="mySlides" id = image_10 src = "images/SF.jpeg" alt="artist sitting and drawing a san francisco home with a cup of coffee" class="mix other"/>
+        
+                
+        <button class="images-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="images-right" onclick="plusDivs(+1)">&#10095;</button>
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+    </div>
+
+
+   
+</main>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+
+<script src="dist/mixitup.min.js"></script>
+<script>
+    var containerEl = document.querySelector('.images');
+
+    var mixer = mixitup(containerEl);
+</script>
+
+<footer>
+    <p> &copy; Miranda Janan Kharsa 2021 </p>
+</footer>
+
+
+</body>
+</html>
