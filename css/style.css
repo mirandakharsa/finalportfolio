@@ -239,7 +239,7 @@ a.skip{
 @media only screen and (min-width: 700px){
 
 .images{
-    display: grid;
+  
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 1.5rem;
@@ -362,7 +362,7 @@ body, html{
 
 .flip-card-back {
   background-color: #fff;
-  color: 000;
+  color: #000;
   transform: rotateY(180deg);
   
 }
@@ -380,7 +380,7 @@ body, html{
 }
 
 
-@keyframes bouncearrow {
+@keyframes bouncearrow{
     0%{top: 0px;}
     50%{top: 20px;}
     100%{top: 0px;}
@@ -390,7 +390,7 @@ body, html{
 
 /* remove animations/reduce motion */
 
-@media (prefers-reduced-motion) {
+@media (prefers-reduced-motion){
     .parallax{
         background-attachment: initial;
     }
@@ -401,7 +401,8 @@ body, html{
         transition: initial; 
     }
 
-@keyframes bouncearrow {
+@keyframes bouncearrow{
+  
     display: none;
     }
 
@@ -414,7 +415,7 @@ body, html{
 
 /* increase fonts*/
 
-h1 {
+h1{
     font-size: 100px;
     }
 
@@ -452,4 +453,5 @@ p{
 
 .controls{
     display: none;
+}
 }
