@@ -293,6 +293,7 @@ h2{
 
 h1, h2, p{
     margin: 35px;
+   
 }
 
 /* grid for form/contact page */
@@ -310,7 +311,7 @@ body, html{
     height: 100%;
 }
 .parallax{
-    background-image: url('../images/eyes_on_brown.jpeg');
+    background-image: url('../images/output-onlinepngtools.png');
     background-attachment: fixed; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -371,10 +372,11 @@ body, html{
 .arrow{
     display: block;
     position: relative;
-    font-size: 100px;
+    font-size: 25px;
     animation: bouncearrow 1s infinite;
     margin-left: 80px;
-    color: #2A868A;
+    color: #000;
+    font-family: 'Lora', serif;  
 }
 
 
@@ -408,7 +410,7 @@ body, html{
 
 
 /* desktop view */
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 975px){
 
 /* increase fonts*/
 
@@ -420,7 +422,18 @@ h1 {
     max-width: 100%;
     position: relative;
     margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+#image_1{
+    grid-column: 1 / 1;
+} 
+#image_5{
+    grid-column: 1 / 1;
+} 
 
+#image_10{
+    grid-column: 3 / 3;
 }
 
 p{
@@ -431,4 +444,12 @@ p{
     margin-left: 210px;
     width: 400px;
     height: 400px;
+}
+
+.about_text{
+    column-count: 2;
+}
+
+.controls{
+    display: none;
 }
